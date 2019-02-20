@@ -10,7 +10,7 @@
 
 """
 __author__ = "Emilien Peretti"
-__version__ = "1.2"
+__version__ = "1"
 __doc__ = """aims to generate a script to upload a file to a target in different languages.                                      
 """
 __examples__ = ["filesender /path/to/my/file.exe ftp print /path/on/the/target",
