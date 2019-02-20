@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-from Scripter import Scripter
+from filesender.copy_script.Scripter import Scripter
 
 
 class Hex(Scripter):

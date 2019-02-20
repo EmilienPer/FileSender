@@ -1,5 +1,4 @@
-from copy_script.Scripter import Scripter
-
+from filesender.copy_script.Scripter import Scripter
 
 class ProwerShell(Scripter):
     cmd = ["powershell -c \"(new-object System.Net.WebClient).DownloadFile('<URL>','<TARGET_FILE>')\""]

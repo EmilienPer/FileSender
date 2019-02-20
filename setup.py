@@ -10,9 +10,9 @@ with open("README.md", "r") as fh:
 
 requirements = parse_requirements("requirements.txt", session=False)
 setup(
-  name = "SendFile",
+  name = "filesender",
   packages = find_packages(),
-  version = "1",
+  version = "1.2.1",
   license = "AGPLv3",
   description = "Create script into different language to download a file form a server . Can be useful to send file via a SQLi. ",
   author = "Emilien Peretti",

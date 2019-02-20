@@ -10,7 +10,7 @@
 
 """
 __author__ = "Emilien Peretti"
-__version__ = "1"
+__version__ = "1.2.1"
 __doc__ = """aims to generate a script to upload a file to a target in different languages.                                      
 """
 __examples__ = ["filesender /path/to/my/file.exe ftp print /path/on/the/target",
@@ -290,8 +290,13 @@ def main_with_args(*args, **kwargs):
                                                "when should be replace by the script", dest="params", default=None)
     parser.add_argument("-c", "--cookies", help="The cookies json", dest="cookies", default=None)
     parser.add_argument("--timeout", help="The timeout for server", dest="timeout", default=60)
+    parser.add_argument("--version", help='Display teh current version',
+                        action='store_true', dest="version", default=False)
     args = parser.parse_args()
-    main_with_params(args.file, args.dest, args.type, args.method, args.server_ip, args.server_port, args.url,
+    if args.version:
+        print "Version: {}".format(__version__)
+    else:
+        main_with_params(args.file, args.dest, args.type, args.method, args.server_ip, args.server_port, args.url,
                      args.params, args.cookies, args.timeout)
 
 

@@ -1,5 +1,4 @@
-from Scripter import Scripter
-
+from filesender.copy_script.Scripter import Scripter
 
 class VBScript(Scripter):
     cmd = [

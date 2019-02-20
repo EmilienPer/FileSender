@@ -1,4 +1,4 @@
-from Scripter import Scripter
+from filesender.copy_script.Scripter import Scripter
 
 
 class Wget(Scripter):
